@@ -1,8 +1,15 @@
 import React from 'react';
 
+import Categories from '../categories/Categories';
+import HotDeals from '../HotDeals/HotDeals';
+import SideBar from '../SideBar/SideBar';
+import Content from '../Content/Content';
 export default function Home(){
 
     return(
-        <p>Home Page</p>
+        <div className="row">
+            <SideBar/>
+            <Content/>
+        </div>
     );
 }

@@ -9,14 +9,22 @@ function Language(){
             <div className="header-top-inner">
                 <div className="cnt-account">
                     <ul className="list-unstyled">
-                    <li><a href="/#"><i className="icon fa fa-user"></i>My Account</a></li>
-                    <li><a href="/#"><i className="icon fa fa-heart"></i>Wishlist</a></li>
-                    <li><a href="/#"><i className="icon fa fa-shopping-cart"></i>My Cart</a></li>
-                    <li><a href="/#"><i className="icon fa fa-check"></i>Checkout</a></li>
-                    <li>
-                        <Link to="/login"><i className="icon fa fa-lock"></i>Login</Link> 
+                        <li>
+                            <Link to="/product-comparison"> <i className="icon fa fa-user"></i>Product Comparison</Link> 
+                         
+                        </li>
+                        <li>
+                            <Link to="/wishlist"> <i className="icon fa fa-heart"></i>Wishlist</Link>                     
+                        </li>
+                        <li>
+                            <Link to="/cart"> <i className="icon fa fa-shopping-cart"></i> My Cart</Link>                     
+                        </li>
+                        <li>
+                            <Link to="/check-out"> <i className="icon fa fa-check"></i> Check Out</Link>   
+                        </li>
+                        <li>
+                            <Link to="/login"><i className="icon fa fa-lock"></i>Login</Link> 
                         </li>  
-                     
                     </ul>
                 </div>
                 <div className="cnt-block">

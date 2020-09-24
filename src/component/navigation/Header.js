@@ -193,7 +193,7 @@ function Header() {
                     </li>
                     <li className="active dropdown yamm-fw">
                       {" "}
-                      <Link to="/categories">Categories</Link>
+                      <Link to="/shop-product">Shop Products</Link>
                      {" "}
                     </li>
                     <li className="dropdown yamm mega-menu">
@@ -520,79 +520,7 @@ function Header() {
                       {" "}
                       <a href="contact.html">Kids & Girls</a>{" "}
                     </li>
-                    <li className="dropdown">
-                      <a
-                        href="/#"
-                        className="dropdown-toggle"
-                        data-hover="dropdown"
-                        data-toggle="dropdown"
-                      >
-                        Pages
-                      </a>
-                      <ul className="dropdown-menu pages">
-                        <li>
-                          <div className="yamm-content">
-                            <div className="row">
-                              <div className="col-xs-12 col-menu">
-                                <ul className="links">
-                                  <li>
-                                    <a href="home.html">Home</a>
-                                  </li>
-                                  <li>
-                                    <a href="category.html">Category</a>
-                                  </li>
-                                  <li>
-                                    <a href="detail.html">Detail</a>
-                                  </li>
-                                  <li>
-                                    <a href="shopping-cart.html">
-                                      Shopping Cart Summary
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="checkout.html">Checkout</a>
-                                  </li>
-                                  <li>
-                                    <a href="blog.html">Blog</a>
-                                  </li>
-                                  <li>
-                                    <a href="blog-details.html">Blog Detail</a>
-                                  </li>
-                                  <li>
-                                    <a href="contact.html">Contact</a>
-                                  </li>
-                                  <li>
-                                    <a href="sign-in.html">Sign In</a>
-                                  </li>
-                                  <li>
-                                    <a href="my-wishlist.html">Wishlist</a>
-                                  </li>
-                                  <li>
-                                    <a href="terms-conditions.html">
-                                      Terms and Condition
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="track-orders.html">Track Orders</a>
-                                  </li>
-                                  <li>
-                                    <a href="product-comparison.html">
-                                      Product-Comparison
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="faq.html">FAQ</a>
-                                  </li>
-                                  <li>
-                                    <a href="404.html">404</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
+                   
                     <li className="dropdown  navbar-right special-menu">
                       {" "}
                       <a href="/#">Todays offer</a>{" "}

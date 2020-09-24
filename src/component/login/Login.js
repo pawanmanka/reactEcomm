@@ -1,5 +1,17 @@
 import React from 'react';
 import './Login.css';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import firebase from '../../services/Firebase';
+const uiConfig = {
+   
+   signInFlow: 'popup',
+   signInSuccessUrl: '/signedIn',
+  
+   signInOptions: [
+     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+     firebase.auth.FacebookAuthProvider.PROVIDER_ID
+   ]
+ };
 
 export default function Login(){
 
@@ -12,9 +24,14 @@ export default function Login(){
                     <h4 className=" text-align-left">Sign in</h4>
                     <p className="text-align-left">Hello, Welcome to your account.</p>
                     <div className="social-sign-in outer-top-xs">
-                       <a href="#" className="facebook-sign-in"><i className="fa fa-facebook"></i> Sign In with Facebook</a>
-                       <a href="#" className="twitter-sign-in"><i className="fa fa-twitter"></i> Sign In with Twitter</a>
-                    </div>
+                           <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>   
+                           { 
+                              firebase.auth().onAuthStateChanged(function(user) {
+                                 return (user)?"login Success":"not login"
+                                 
+                                 })
+                           }  
+                     </div>
                     <form className="register-form outer-top-xs" role="form">
                        <div className="form-group text-align-left">
                           <label className="info-title text-align-left" for="exampleInputEmail1">Email Address <span>*</span></label>
